@@ -26,8 +26,6 @@ class UI {
     this.humidity.textContent = `Relative Humidity: ${weather.main.humidity} %`;
     this.feelsLike.textContent = `Feels Like: ${feelsLikeCelsius} °C (${feelsLikeFahrenheit} °F)`;
     this.wind.textContent = `Wind: ${weather.wind.speed} km/h (${windMiles} mp/h)`;
-    this.lastUpdate.textContent = `Last Updated: ${new Date(
-      weather.dt
-    ).toLocaleTimeString()}`;
+    this.lastUpdate.textContent = `Last Updated: ${new Date(weather.dt * 1000).toLocaleTimeString()}`;
   }
 }
