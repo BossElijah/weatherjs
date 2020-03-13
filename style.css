@@ -1,0 +1,14 @@
+footer {
+  color: #fff;
+  margin-top: 0.25rem;
+}
+
+@media (min-width: 600px) {
+  .rounded {
+    margin-top: 5rem;
+  }
+
+  footer {
+    margin-top: 5rem;
+  }
+}
